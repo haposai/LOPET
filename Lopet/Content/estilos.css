@@ -1,0 +1,15 @@
+﻿body {
+}
+.container {
+    display: table;
+    width: 100%;
+}
+
+.row {
+    height: 100%;
+    display: table-row;
+}
+
+.col-sm-3 {
+    display: table-cell;
+}

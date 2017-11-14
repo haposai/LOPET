@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0SHBaBoXSE2O6GnKnWLp+QAAAAACAAAAAAAQZgAAAAEAACAAAAB6ndj58wYGr1zvhbXEOX5dXrqhU3Pq41ifeLSu3tXdMgAAAAAOgAAAAAIAACAAAAANHLgyzZ2MqoxQVm/mxqiz8tMwIqvSxCNmZI06wcNmsyAAAAAggec1h75ED3W+MJTZwLjrKDYuzrIbKNUdKJkplkvUukAAAAC9+zYN4zMYYhoPKj7bqRhGpCTL9dJF5YQlRkxub8qBdvm2HZ68B5sYov8bnZYka0p00tg9fmh6IxFdExLOj7Z2</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.Smarterasp.net/hapo6k-001-site1.itempurl.com</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="LopetBDConnectionString-Web.config Connection String" description="LopetBDConnectionString Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=bdlopet.database.windows.net;Initial Catalog=LopetBD;Persist Security Info=True;User ID=hapo;Password=Shippud3n" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Christian\\Desktop\\LOPET\\Lopet\\Lopet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LopetBDConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionString-Web.config Connection String" description="ConnectionString Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=bdlopet.database.windows.net;Initial Catalog=LopetBD;Persist Security Info=True;User ID=hapo;Password=Shippud3n" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Christian\\Desktop\\LOPET\\Lopet\\Lopet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

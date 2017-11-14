@@ -1,0 +1,215 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Lopet.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LOPET</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Content/dist/css/AdminLTE.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="Content/dist/css/skins/_all-skins.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="Content/styles/font.css" rel="stylesheet" />
+    <link href="Content/plugins/datatables/jquery.dataTables.css" rel="stylesheet" />
+
+
+</head>
+<body class="sidebar-mini wysihtml5-supported fixed skin-black-light" style="font-family:flexothin;">
+
+
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+            <header class="main-header">
+                <!--AQUI BORRAMOS LOS LOGOS DE  LA WEB-->
+                <!-- Header Navbar: style can be found in header.less -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+
+                    <a href="#" class="sidebar-toggle text-blue" data-toggle="control-sidebar" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                             <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="Content/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                    <span class="hidden-xs">Chrystian Carrasco Ling</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="Content/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                        <p>
+                                            Administrador
+                                          <small>Member since Nov. 2017</small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Salir</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Control Sidebar Toggle Button -->
+                            <li>
+                                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+
+            </header>
+            <!--  column. contains the   logo and sidebar -->
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+               <!-- Main content -->
+                <section class="content">
+                    <!-- Inicio de Area de trabajo-->
+
+
+                    <!-- Main row -->
+                    <div class="row">
+                        <!-- col -->
+                        <section class="col-lg-12">
+                            <!-- quick email widget -->
+                            <div class="box box-default">
+                                <div class="box-header">
+                                    <i class="fa fa-desktop text-blue"></i>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                                  <%--  <h3 class="box-title" style="color:midnightblue">Leads Factoring Electrónico</h3>--%>
+                                </div>
+                               <%-- <div class="box-body">
+                                    <form action="#" method="post">
+                                        <div class="form-group">
+                                           
+                                        </div>
+                                        
+
+                                    </form>
+                                </div>--%>
+                            </div>
+
+                        </section>
+                        <!-- /.col -->
+                     </div>
+                </section>
+                <!-- /.content -->
+            </div>
+
+            <!-- /.content-wrapper -->
+
+            <!-- Pie de Página -->
+            
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+   
+                </div>
+                <strong>Copyright &copy; 2017 <a href="#">Lopet</a>.</strong> All rights reserved.
+            </footer>
+
+            <!-- /.Pie de Página -->
+
+            <!-- Control Sidebar barra izquierda-->
+ 
+            <aside class="control-sidebar control-sidebar-light" style="overflow: hidden;">
+
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+
+                    <ul class="sidebar-menu">
+
+                        <li class="header">MAIN NAVIGATION</li>
+                        <li><a href="Dashboard.aspx"><i class="fa fa-pie-chart"></i><span>Dashboard</span></a></li>
+                        <li><a href="Lopets.aspx"><i class="fa fa-book"></i><span>Lopets</span></a></li>
+                        <li><a href="Dueños.aspx"><i class="fa fa-book"></i><span>Dueños</span></a></li>
+                        <li><a href="Alojamientos.aspx"><i class="fa  fa-exclamation"></i><span>Alojamientos</span></a></li>
+
+                    </ul>
+
+
+                </section>
+                <!-- /.sidebar -->
+
+            </aside>
+    
+            <!-- /.control-sidebar barra izquierda -->
+
+        </div>
+
+        <!-- ./wrapper -->
+        <!-- jQuery 3.2.1 -->
+        <script src="Content/plugins/jQuery/jquery-3.2.1.min.js"></script>
+        <!-- jQuery UI 1.12.1 -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+        <script>
+            $.widget.bridge('uibutton', $.ui.button);
+        </script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="Content/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Slimscroll -->
+        <script src="Content/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="Content/plugins/fastclick/fastclick.js"></script>
+        <!-- AdminLTE App -->
+        <script src="Content/dist/js/app.min.js"></script>
+        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+        <script src="Content/dist/js/pages/dashboard.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="Content/dist/js/demo.js"></script>
+        <script src="Content/plugins/datatables/jquery.dataTables.js"></script>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#datatable').dataTable(
+                        {
+                            language: {
+
+                                url: '//cdn.datatables.net/plug-ins/1.10.11/i18n/Spanish.json'
+                            },     
+                            "scrollY": "400px",
+                            "scrollCollapse": true,
+                            "bPaginate": false,
+                            "bFilter": false,
+                            "bAutoWidth": true,
+                       
+
+                        }
+                        );
+
+
+                    
+                });
+    </script>
+
+ 
+    </form>
+</body>
+</html>

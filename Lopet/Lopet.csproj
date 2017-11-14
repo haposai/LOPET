@@ -1,0 +1,649 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE8D46FD-81AA-4C4A-861E-2D2F8C9A1293}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lopet</RootNamespace>
+    <AssemblyName>Lopet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ASPSnippets.FaceBookAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ASPSnippets.FaceBookAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="FusionCharts">
+      <HintPath>D:\Proyectos\2.26-correciones\WebFileDeGestion\WebFileDeGestion\bin\FusionCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Alojamientos.aspx" />
+    <Content Include="Admin\bin\MasterTemplate.dll" />
+    <Content Include="Admin\bin\MasterTemplate.pdb" />
+    <Content Include="Admin\Content\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Admin\Content\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Admin\Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Admin\Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Admin\Content\bootstrap\js\bootstrap.js" />
+    <Content Include="Admin\Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Admin\Content\bootstrap\js\npm.js" />
+    <Content Include="Admin\Content\dist\css\AdminLTE.css" />
+    <Content Include="Admin\Content\dist\css\AdminLTE.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-black-light.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-black-light.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-black.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-black.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-blue-light.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-blue-light.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-blue.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-blue.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-green-light.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-green-light.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-green.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-green.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-purple-light.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-purple-light.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-purple.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-purple.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-red-light.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-red-light.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-red.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-red.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-yellow-light.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-yellow-light.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-yellow.css" />
+    <Content Include="Admin\Content\dist\css\skins\skin-yellow.min.css" />
+    <Content Include="Admin\Content\dist\css\skins\_all-skins.css" />
+    <Content Include="Admin\Content\dist\css\skins\_all-skins.min.css" />
+    <Content Include="Admin\Content\dist\img\avatar.png" />
+    <Content Include="Admin\Content\dist\img\avatar2.png" />
+    <Content Include="Admin\Content\dist\img\avatar3.png" />
+    <Content Include="Admin\Content\dist\img\avatar5.png" />
+    <Content Include="Admin\Content\dist\img\boxed-bg.jpg" />
+    <Content Include="Admin\Content\dist\img\boxed-bg.png" />
+    <Content Include="Admin\Content\dist\img\default-50x50.gif" />
+    <Content Include="Admin\Content\dist\img\icons.png" />
+    <Content Include="Admin\Content\dist\img\user2-160x160.jpg" />
+    <Content Include="Admin\Content\dist\img\user3-128x128.jpg" />
+    <Content Include="Admin\Content\dist\img\user4-128x128.jpg" />
+    <Content Include="Admin\Content\dist\js\app.js" />
+    <Content Include="Admin\Content\dist\js\app.min.js" />
+    <Content Include="Admin\Content\dist\js\demo.js" />
+    <Content Include="Admin\Content\dist\js\pages\dashboard.js" />
+    <Content Include="Admin\Content\dist\js\pages\dashboard2.js" />
+    <Content Include="Admin\Content\fonts\flexo-black-webfont.svg" />
+    <Content Include="Admin\Content\fonts\flexo-bold-webfont.svg" />
+    <Content Include="Admin\Content\fonts\flexo-boldit-webfont.svg" />
+    <Content Include="Admin\Content\fonts\flexo-heavy-webfont.svg" />
+    <Content Include="Admin\Content\fonts\flexo-heavyit-webfont.svg" />
+    <Content Include="Admin\Content\fonts\flexo-it-webfont.svg" />
+    <Content Include="Admin\Content\fonts\flexo-medium-webfont.svg" />
+    <Content Include="Admin\Content\fonts\flexo-mediumit-webfont.svg" />
+    <Content Include="Admin\Content\fonts\flexo-regular-webfont.svg" />
+    <Content Include="Admin\Content\fonts\flexo-thin-webfont.svg" />
+    <Content Include="Admin\Content\images\sort_asc.png" />
+    <Content Include="Admin\Content\images\sort_asc_disabled.png" />
+    <Content Include="Admin\Content\images\sort_both.png" />
+    <Content Include="Admin\Content\images\sort_desc.png" />
+    <Content Include="Admin\Content\images\sort_desc_disabled.png" />
+    <Content Include="Admin\Content\plugins\datatables\jquery.dataTables.css" />
+    <Content Include="Admin\Content\plugins\datatables\jquery.dataTables.js" />
+    <Content Include="Admin\Content\plugins\fastclick\fastclick.js" />
+    <Content Include="Admin\Content\plugins\fastclick\fastclick.min.js" />
+    <Content Include="Admin\Content\plugins\jQueryUI\jquery-ui.js" />
+    <Content Include="Admin\Content\plugins\jQueryUI\jquery-ui.min.js" />
+    <Content Include="Admin\Content\plugins\jQuery\jquery-3.2.1.min.js" />
+    <Content Include="Admin\Content\plugins\slimScroll\jquery.slimscroll.js" />
+    <Content Include="Admin\Content\plugins\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="Admin\Content\styles\font.css" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\Dueños.aspx" />
+    <Content Include="Admin\Lopets.aspx" />
+    <Content Include="Admin\ModificarAlojamiento.aspx" />
+    <Content Include="Admin\ModificarDueño.aspx" />
+    <Content Include="Admin\ModificarLopet.aspx" />
+    <Content Include="Admin\Registrar_alojamiento.aspx" />
+    <Content Include="Admin\Registrar_Dueño.aspx" />
+    <Content Include="Admin\Registrar_Lopet.aspx" />
+    <Content Include="buscarLopets.aspx" />
+    <Content Include="busqueda_sitios.aspx" />
+    <Content Include="Content\Charts\fusioncharts.charts.js" />
+    <Content Include="Content\Charts\fusioncharts.gantt.js" />
+    <Content Include="Content\Charts\fusioncharts.js" />
+    <Content Include="Content\Charts\fusioncharts.maps.js" />
+    <Content Include="Content\Charts\fusioncharts.powercharts.js" />
+    <Content Include="Content\Charts\fusioncharts.theme.fint.js" />
+    <Content Include="Content\Charts\fusioncharts.treemap.js" />
+    <Content Include="Content\Charts\fusioncharts.widgets.js" />
+    <Content Include="Content\Charts\fusioncharts.zoomscatter.js" />
+    <Content Include="Content\css\bootstrap-combined.min.css" />
+    <Content Include="Content\css\bootstrap_min_gg.css" />
+    <Content Include="Content\css\gridview.css" />
+    <Content Include="Content\css\jquery.dataTables.min.css" />
+    <Content Include="Content\js\bootsrap_multiselect_gg.js" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\fwslider.css" />
+    <Content Include="Content\css\magnific-popup1.css" />
+    <Content Include="Content\css\theme.css" />
+    <Content Include="Content\estilos.css" />
+    <Content Include="Content\images\banner.jpg" />
+    <Content Include="Content\images\bienvenidoGif.gif" />
+    <Content Include="Content\images\close.png" />
+    <Content Include="Content\images\contact.png" />
+    <Content Include="Content\images\dob.png" />
+    <Content Include="Content\images\icon.png" />
+    <Content Include="Content\images\icons.png" />
+    <Content Include="Content\images\ing_face.png" />
+    <Content Include="Content\images\location.png" />
+    <Content Include="Content\images\lock.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\mapa.png" />
+    <Content Include="Content\images\message.png" />
+    <Content Include="Content\images\mobile.png" />
+    <Content Include="Content\images\nav_icon.png" />
+    <Content Include="Content\images\play.png" />
+    <Content Include="Content\images\reg_face.png" />
+    <Content Include="Content\images\sliderarrows.png" />
+    <Content Include="Content\images\top_move.png" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\css3-mediaqueries.js" />
+    <Content Include="Content\js\easing.js" />
+    <Content Include="Content\js\flexibility.js" />
+    <Content Include="Content\js\fwslider.js" />
+    <Content Include="Content\js\hapo.js" />
+    <Content Include="Content\js\jquery-ui.min.js" />
+    <Content Include="Content\js\jquery.magnific-popup.js" />
+    <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\jquery_min_gg.js" />
+    <Content Include="Content\js\login.js" />
+    <Content Include="Content\js\modernizr.custom.js" />
+    <Content Include="Content\js\move-top.js" />
+    <Content Include="Content\js\responsive.menu.js" />
+    <Content Include="Content\js\updatepanelhook.fusioncharts.js" />
+    <Content Include="Content\login\css\style.css" />
+    <Content Include="Content\login\js\index.js" />
+    <Content Include="Content\start\bootstrap.min.css" />
+    <Content Include="Content\start\custom.min.css" />
+    <Content Include="Content\start\dash.min.css" />
+    <Content Include="Content\start\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Content\start\jquery.mCustomScrollbar.css" />
+    <Content Include="Content\start\jquery.toast.min.css" />
+    <Content Include="Content\start\jquery.toast.min.js" />
+    <Content Include="Content\start\main.js" />
+    <Content Include="Content\start\material-design-iconic-font.min.css" />
+    <Content Include="Content\start\modernizr.js" />
+    <Content Include="Content\start\normalize.css" />
+    <Content Include="Content\start\nprogress.css" />
+    <Content Include="Content\start\style.css" />
+    <Content Include="Content\start\sweet-alert.css" />
+    <Content Include="Content\start\timeline.css" />
+    <Content Include="Dueno\AgregarMascota.aspx" />
+    <Content Include="Dueno\buscarLopets.aspx" />
+    <Content Include="Dueno\busqueda_sitios.aspx" />
+    <Content Include="Dueno\Editarmascota.aspx" />
+    <Content Include="Dueno\inicio.aspx" />
+    <Content Include="Dueno\Lopet.aspx" />
+    <Content Include="Dueno\misContratos.aspx" />
+    <Content Include="Dueno\misMascotas.aspx" />
+    <Content Include="Dueno\perfil.aspx" />
+    <Content Include="Dueno\WebForm1.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="inicio.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="login_l.aspx" />
+    <Content Include="Lopet\busqueda_sitios.aspx" />
+    <Content Include="Lopet\misContratos.aspx" />
+    <Content Include="Lopet\MisPagos.aspx" />
+    <Content Include="Lopet\perfil.aspx" />
+    <Content Include="Lopet\RealizarPago.aspx" />
+    <Content Include="mascotas\giphy-downsized.gif" />
+    <Content Include="mascotas\mascota.jpg" />
+    <Content Include="mascotas\peke.jpg" />
+    <Content Include="mascotas\rayko.jpg" />
+    <Content Include="perfil\foto10.jpg" />
+    <Content Include="perfil\foto11.jpg" />
+    <Content Include="perfil\foto12.jpg" />
+    <Content Include="perfil\foto13.jpg" />
+    <Content Include="perfil\foto14.jpg" />
+    <Content Include="perfil\foto2.jpg" />
+    <Content Include="perfil\foto3.jpg" />
+    <Content Include="perfil\foto4.jpg" />
+    <Content Include="perfil\foto5.jpg" />
+    <Content Include="perfil\foto6.jpg" />
+    <Content Include="perfil\foto7.jpg" />
+    <Content Include="perfil\foto8.jpg" />
+    <Content Include="perfil\foto9.jpg" />
+    <Content Include="perfil\vacio.jpg" />
+    <Content Include="portada\lopets.jpg" />
+    <Content Include="Registrar.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Lopet\GG.Master" />
+    <Content Include="Principal.Master" />
+    <Content Include="Admin\Content\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Admin\Content\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Admin\Content\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Admin\Content\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Admin\Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\Content\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Admin\Content\dist\img\Thumbs.db" />
+    <Content Include="Admin\Content\fonts\flexo-black-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-black-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-black-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-black-webfontd41d.eot" />
+    <Content Include="Admin\Content\fonts\flexo-bold-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-bold-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-bold-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-bold-webfontd41d.eot" />
+    <Content Include="Admin\Content\fonts\flexo-boldit-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-boldit-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-boldit-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-boldit-webfontd41d.eot" />
+    <Content Include="Admin\Content\fonts\flexo-heavy-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-heavy-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-heavy-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-heavy-webfontd41d.eot" />
+    <Content Include="Admin\Content\fonts\flexo-heavyit-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-heavyit-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-heavyit-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-heavyit-webfontd41d.eot" />
+    <Content Include="Admin\Content\fonts\flexo-it-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-it-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-it-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-it-webfontd41d.eot" />
+    <Content Include="Admin\Content\fonts\flexo-medium-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-medium-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-medium-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-medium-webfontd41d.eot" />
+    <Content Include="Admin\Content\fonts\flexo-mediumit-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-mediumit-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-mediumit-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-mediumit-webfontd41d.eot" />
+    <Content Include="Admin\Content\fonts\flexo-regular-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-regular-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-regular-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-regular-webfontd41d.eot" />
+    <Content Include="Admin\Content\fonts\flexo-thin-webfont.eot" />
+    <Content Include="Admin\Content\fonts\flexo-thin-webfont.ttf" />
+    <Content Include="Admin\Content\fonts\flexo-thin-webfont.woff" />
+    <Content Include="Admin\Content\fonts\flexo-thin-webfontd41d.eot" />
+    <Content Include="Admin\Admin.Master" />
+    <None Include="Scripts\jquery-1.6.2-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.2.js" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="Test.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Alojamientos.aspx.cs">
+      <DependentUpon>Alojamientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Alojamientos.aspx.designer.cs">
+      <DependentUpon>Alojamientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dueños.aspx.cs">
+      <DependentUpon>Dueños.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dueños.aspx.designer.cs">
+      <DependentUpon>Dueños.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Lopets.aspx.cs">
+      <DependentUpon>Lopets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Lopets.aspx.designer.cs">
+      <DependentUpon>Lopets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModificarAlojamiento.aspx.cs">
+      <DependentUpon>ModificarAlojamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModificarAlojamiento.aspx.designer.cs">
+      <DependentUpon>ModificarAlojamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModificarDueño.aspx.cs">
+      <DependentUpon>ModificarDueño.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModificarDueño.aspx.designer.cs">
+      <DependentUpon>ModificarDueño.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModificarLopet.aspx.cs">
+      <DependentUpon>ModificarLopet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModificarLopet.aspx.designer.cs">
+      <DependentUpon>ModificarLopet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Registrar_alojamiento.aspx.cs">
+      <DependentUpon>Registrar_alojamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Registrar_alojamiento.aspx.designer.cs">
+      <DependentUpon>Registrar_alojamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Registrar_Dueño.aspx.cs">
+      <DependentUpon>Registrar_Dueño.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Registrar_Dueño.aspx.designer.cs">
+      <DependentUpon>Registrar_Dueño.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Registrar_Lopet.aspx.cs">
+      <DependentUpon>Registrar_Lopet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Registrar_Lopet.aspx.designer.cs">
+      <DependentUpon>Registrar_Lopet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BEL\BEL_Contrato.cs" />
+    <Compile Include="BEL\BEL_Lopet.cs" />
+    <Compile Include="BEL\BEL_Mascota.cs" />
+    <Compile Include="BEL\BEL_Usuario.cs" />
+    <Compile Include="BLL\BLL_Contrato.cs" />
+    <Compile Include="BLL\BLL_Mascota.cs" />
+    <Compile Include="BLL\BLL_Usuario.cs" />
+    <Compile Include="buscarLopets.aspx.cs">
+      <DependentUpon>buscarLopets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buscarLopets.aspx.designer.cs">
+      <DependentUpon>buscarLopets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="busqueda_sitios.aspx.cs">
+      <DependentUpon>busqueda_sitios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="busqueda_sitios.aspx.designer.cs">
+      <DependentUpon>busqueda_sitios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DAL_BD.cs" />
+    <Compile Include="DAL\DAL_Contrato.cs" />
+    <Compile Include="DAL\DAL_Mascota.cs" />
+    <Compile Include="DAL\DAL_Usuario.cs" />
+    <Compile Include="Dueno\AgregarMascota.aspx.cs">
+      <DependentUpon>AgregarMascota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\AgregarMascota.aspx.designer.cs">
+      <DependentUpon>AgregarMascota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\buscarLopets.aspx.cs">
+      <DependentUpon>buscarLopets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\buscarLopets.aspx.designer.cs">
+      <DependentUpon>buscarLopets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\busqueda_sitios.aspx.cs">
+      <DependentUpon>busqueda_sitios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\busqueda_sitios.aspx.designer.cs">
+      <DependentUpon>busqueda_sitios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\Dueño.Master.cs">
+      <DependentUpon>Dueño.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\Dueño.Master.designer.cs">
+      <DependentUpon>Dueño.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\Editarmascota.aspx.cs">
+      <DependentUpon>Editarmascota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\Editarmascota.aspx.designer.cs">
+      <DependentUpon>Editarmascota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\inicio.aspx.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\inicio.aspx.designer.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\Lopet.aspx.cs">
+      <DependentUpon>Lopet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\Lopet.aspx.designer.cs">
+      <DependentUpon>Lopet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\misContratos.aspx.cs">
+      <DependentUpon>misContratos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\misContratos.aspx.designer.cs">
+      <DependentUpon>misContratos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\misMascotas.aspx.cs">
+      <DependentUpon>misMascotas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\misMascotas.aspx.designer.cs">
+      <DependentUpon>misMascotas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\perfil.aspx.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\perfil.aspx.designer.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dueno\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dueno\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.aspx.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inicio.aspx.designer.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login_l.aspx.cs">
+      <DependentUpon>login_l.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login_l.aspx.designer.cs">
+      <DependentUpon>login_l.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lopet\busqueda_sitios.aspx.cs">
+      <DependentUpon>busqueda_sitios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lopet\busqueda_sitios.aspx.designer.cs">
+      <DependentUpon>busqueda_sitios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lopet\GG.Master.cs">
+      <DependentUpon>GG.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lopet\GG.Master.designer.cs">
+      <DependentUpon>GG.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Lopet\misContratos.aspx.cs">
+      <DependentUpon>misContratos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lopet\misContratos.aspx.designer.cs">
+      <DependentUpon>misContratos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lopet\MisPagos.aspx.cs">
+      <DependentUpon>MisPagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lopet\MisPagos.aspx.designer.cs">
+      <DependentUpon>MisPagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lopet\perfil.aspx.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lopet\perfil.aspx.designer.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lopet\RealizarPago.aspx.cs">
+      <DependentUpon>RealizarPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lopet\RealizarPago.aspx.designer.cs">
+      <DependentUpon>RealizarPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar.aspx.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrar.aspx.designer.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\images\Thumbs.db" />
+    <Content Include="Content\login\scss\style.scss" />
+    <Content Include="Dueno\Dueño.Master" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\Lopet1 - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Content\dist\img\credit\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52885</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52885/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

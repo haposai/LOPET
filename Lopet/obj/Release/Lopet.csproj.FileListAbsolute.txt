@@ -1,0 +1,7 @@
+C:\Users\Christian\Desktop\LOPET\Lopet\Lopet\bin\Lopet.dll.config
+C:\Users\Christian\Desktop\LOPET\Lopet\Lopet\bin\Lopet.dll
+C:\Users\Christian\Desktop\LOPET\Lopet\Lopet\bin\Lopet.pdb
+C:\Users\Christian\Desktop\LOPET\Lopet\Lopet\obj\Release\Lopet.dll
+C:\Users\Christian\Desktop\LOPET\Lopet\Lopet\obj\Release\Lopet.pdb
+C:\Users\Christian\Desktop\LOPET\Lopet\Lopet\obj\Release\Lopet.csprojResolveAssemblyReference.cache
+C:\Users\Christian\Desktop\LOPET\Lopet\Lopet\bin\FusionCharts.dll

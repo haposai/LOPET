@@ -1,0 +1,122 @@
+h3, h2, h1 {
+    font-family:flexobold;
+    color:#f36e29;
+}
+
+
+@font-face {
+    font-family: 'flexoitalic';
+    src: url('../fonts/flexo-it-webfont.eot');
+    src: url('../fonts/flexo-it-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-it-webfont.woff') format('woff'),
+         url('../fonts/flexo-it-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-it-webfont.svg#flexoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flexobold_italic';
+
+
+    src: url('../fonts/flexo-boldit-webfont.eot');
+    src: url('../fonts/flexo-boldit-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-boldit-webfont.woff') format('woff'),
+         url('../fonts/flexo-boldit-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-boldit-webfont.svg#flexobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'flexomedium_italic';
+    src: url('../fonts/flexo-mediumit-webfont.eot');
+    src: url('../fonts/flexo-mediumit-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-mediumit-webfont.woff') format('woff'),
+         url('../fonts/flexo-mediumit-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-mediumit-webfont.svg#flexomedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'flexoblack';
+    src: url('../fonts/flexo-black-webfont.eot');
+    src: url('../fonts/flexo-black-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-black-webfont.woff') format('woff'),
+         url('../fonts/flexo-black-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-black-webfont.svg#flexoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'flexobold';
+    src: url('../fonts/flexo-bold-webfont.eot');
+    src: url('../fonts/flexo-bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-bold-webfont.woff') format('woff'),
+         url('../fonts/flexo-bold-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-bold-webfont.svg#flexobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'flexoheavy';
+    src: url('../fonts/flexo-heavy-webfont.eot');
+    src: url('../fonts/flexo-heavy-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-heavy-webfont.woff') format('woff'),
+         url('../fonts/flexo-heavy-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-heavy-webfont.svg#flexoheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flexomedium';
+    src: url('../fonts/flexo-medium-webfont.eot');
+    src: url('../fonts/flexo-medium-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-medium-webfont.woff') format('woff'),
+         url('../fonts/flexo-medium-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-medium-webfont.svg#flexomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flexoregular';
+    src: url('../fonts/flexo-regular-webfont.eot');
+    src: url('../fonts/flexo-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-regular-webfont.woff') format('woff'),
+         url('../fonts/flexo-regular-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-regular-webfont.svg#flexoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flexothin';
+    src: url('../fonts/flexo-thin-webfont.eot');
+    src: url('../fonts/flexo-thin-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-thin-webfont.woff') format('woff'),
+         url('../fonts/flexo-thin-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-thin-webfont.svg#flexothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flexoheavy_italic';
+    src: url('../fonts/flexo-heavyit-webfont.eot');
+    src: url('../fonts/flexo-heavyit-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexo-heavyit-webfont.woff') format('woff'),
+         url('../fonts/flexo-heavyit-webfont.ttf') format('truetype'),
+         url('../fonts/flexo-heavyit-webfont.svg#flexoheavy_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
